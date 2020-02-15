@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadFragment(Fragment fragment) {
 // create a FragmentManager
         FragmentManager fm = getFragmentManager();
-// create a FragmentTransaction to begin the transaction and replace the
+// create a FragmentTransaction to begin the transaction and replace the Fragment
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
 // replace the FrameLayout with new Fragment
         fragmentTransaction.replace(R.id.frameLayout, fragment);
